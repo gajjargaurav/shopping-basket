@@ -14,7 +14,7 @@ expect(simpleDiscount)
 .toEqual({
 	cost: 100,
 	discount: {
-		type: 'absolute',
+		type: 'message',
 		value: 'three for the price of two'
 	}
 })
@@ -28,7 +28,7 @@ expect(mixedDiscount)
 .toEqual({
 	cost: 150,
 	discount: {
-		type: 'absolute',
+		type: 'message',
 		value: 'three for the price of two'
 	}
 })
