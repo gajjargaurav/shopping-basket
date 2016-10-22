@@ -1,11 +1,11 @@
 const stub = {
 	simple: {
 		basket:['apples', 'apples', 'oranges', 'papayas', 'apples' ],
-		receipt: {
+		order: {
 			items: [
-				{ name: 'apples', price: 75 },
-				{ name: 'oranges', price: 30 },
-				{ name: 'papayas', price: 50 }
+				{ item: 'apples', cost: 75, qty:3 },
+				{ item: 'oranges', cost: 30, qty:1 },
+				{ item: 'papayas', cost: 50, qty:1 }
 			],
 			total: 155
 		}

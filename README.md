@@ -19,7 +19,7 @@ Given a list of shopping, calculate the total cost of those items.The output sho
 The program depends on receiving the basket so that is the only input parameter required to run it.
 e.g.
 
-Run the following command in console
+Run the following command in terminal
 
 `node index.js 'apples oranges papayas'`
 
