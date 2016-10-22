@@ -3,18 +3,19 @@ const order = (basket, catalogue) => {
 	const orderedItems = basket.reduce((prev, curr) => (prev[curr] = ++prev[curr] || 1, prev), {})
 
 	order.total = catalogue.reduce((total, item) => {
-		let itemPrice = 0
-		if(orderedItems[item.name]) {
+		let itemCost = 0
+		const orderQuantity = orderedItems[item.name]
+		if(orderQuantity) {
 			if(item.discount) {
-				const discount = item.discount(orderedItems[item.name], item.price)
-				itemPrice = discount.price
-				order.items.push(Object.assign({ name: item.name}, discount))
+				const discount = item.discount(orderQuantity, item.price)
+				itemCost = discount.cost
+				order.items.push(Object.assign({ item: item.name, qty: orderQuantity}, discount))
 			}
 			else {
-				itemPrice = orderedItems[item.name]*item.price
-				order.items.push({ name: item.name, price: itemPrice })
+				itemCost = orderQuantity*item.price
+				order.items.push({ item: item.name, qty: orderQuantity, cost: itemCost })
 			}
-			return total + itemPrice
+			return total + itemCost
 		}
 		return total
 	}, 0)
