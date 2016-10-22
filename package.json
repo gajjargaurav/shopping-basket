@@ -1,0 +1,12 @@
+{
+  "name": "shopping-basket",
+  "version": "1.0.0",
+  "description": "Write a simple program that calculates the price of a shopping basket.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gaurav Gajjar",
+  "license": "ISC"
+}
