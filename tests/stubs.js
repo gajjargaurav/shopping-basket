@@ -1,7 +1,7 @@
 const stub = {
 	simple: {
 		basket:['apples', 'apples', 'oranges', 'papayas', 'apples' ],
-		receipt: {
+		order: {
 			items: [
 				{ name: 'apples', price: 75 },
 				{ name: 'oranges', price: 30 },
