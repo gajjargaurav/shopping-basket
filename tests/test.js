@@ -16,3 +16,7 @@ expect(simpleDiscount)
 const noDiscount = discount(2, 50)
 expect(noDiscount)
 .toEqual({ price: 100})
+
+const mixedDiscount = discount(4, 50)
+expect(mixedDiscount)
+.toEqual({ price: 150, message: 'three for the price of two'})
