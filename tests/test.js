@@ -3,6 +3,5 @@ const stubs = require('./stubs')
 const receipt = require('../receipt')
 const catalogue = require('../catalogue')
 
-const result = receipt(stubs.simple.basket, catalogue)
-
-expect(result).toEqual(stubs.simple.receipt)
+const simpleBasketResult = receipt(stubs.simple.basket, catalogue)
+expect(simpleBasketResult).toEqual(stubs.simple.receipt)

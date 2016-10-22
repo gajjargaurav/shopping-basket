@@ -5,7 +5,7 @@ const stub = {
 			items: [
 				{ name: 'apples', price: 75 },
 				{ name: 'oranges', price: 30 },
-				{ name: 'papayas', price: 50, message: 'three for the price of two' }
+				{ name: 'papayas', price: 50 }
 			],
 			total: 155
 		}

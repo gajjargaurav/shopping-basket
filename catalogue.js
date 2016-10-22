@@ -1,6 +1,13 @@
-const discount = {
-	formula: (count, price) => count%3 === 0 ? count*price*2/3 : count*price,
-	message: 'three for the price of two'
+const discount = (count, price) => {
+	if(count%3 === 0) {
+		return {
+			price: count*price*2/3,
+			message: 'three for the price of two'
+		}
+	}
+	return {
+		price: count*price
+	}
 }
 
 const catalogue = [

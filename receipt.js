@@ -6,10 +6,11 @@ const receipt = (basket, catalogue) => {
 		let itemPrice = 0
 		if(order[item.name]) {
 			if(item.discount) {
-				itemPrice = item.discount.formula(order[item.name], item.price)
 				// console.log(`${item.name} x ${order[item.name]} : ${itemPrice}p`)
 				// console.log(item.discount.message)
-				receipt.items.push({ name: item.name, price: itemPrice, message: item.discount.message })
+				const discount = item.discount(order[item.name], item.price)
+				itemPrice = discount.price
+				receipt.items.push(Object.assign({ name: item.name}, discount))
 			}
 			else {
 				itemPrice = order[item.name]*item.price
