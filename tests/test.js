@@ -8,5 +8,11 @@ expect(simpleBasketResult).toEqual(stubs.simple.receipt)
 
 // discount tests
 const discount = require('../discount')
-expect(discount(3, 50))
+
+const simpleDiscount = discount(3, 50)
+expect(simpleDiscount)
 .toEqual({ price: 100, message: 'three for the price of two'})
+
+const noDiscount = discount(2, 50)
+expect(noDiscount)
+.toEqual({ price: 100})
