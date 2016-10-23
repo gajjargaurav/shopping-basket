@@ -4,13 +4,16 @@
   "description": "Write a simple program that calculates the price of a shopping basket.",
   "main": "index.js",
   "scripts": {
-    "test": "node tests/test.js"
+    "test": "mocha ./tests"
   },
   "keywords": [],
   "author": "Gaurav Gajjar",
   "license": "ISC",
   "dependencies": {
-    "expect": "^1.20.2",
     "receipt": "git@github.com:gajjargaurav/Receipt.git"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.1.2"
   }
 }
