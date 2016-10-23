@@ -4,7 +4,7 @@
   "description": "Write a simple program that calculates the price of a shopping basket.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./tests"
+    "test": "mocha -w ./tests"
   },
   "keywords": [],
   "author": "Gaurav Gajjar",
@@ -13,7 +13,7 @@
     "receipt": "git@github.com:gajjargaurav/Receipt.git"
   },
   "devDependencies": {
-    "expect.js": "^0.3.1",
+    "expect": "^1.20.2",
     "mocha": "^3.1.2"
   }
 }
