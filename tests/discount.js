@@ -1,4 +1,4 @@
-const expect = require('expect.js')
+const expect = require('expect')
 const discount = require('../discount')
 
 context('Discount', function () {
@@ -12,8 +12,8 @@ context('Discount', function () {
 				}
 			}
 			const actual = discount(3, 50)
-			expect(actual).to.have.property('discount')
-			expect(actual).to.eql(expected)
+			expect(actual).toIncludeKey('discount')
+			expect(actual).toEqual(expected)
 		})
 
 		it('mixed discount', function () {
@@ -25,7 +25,7 @@ context('Discount', function () {
 				}
 			}
 			const actual = discount(4, 50)
-			expect(actual).to.eql(expected)
+			expect(actual).toEqual(expected)
 		})
 	})
 
@@ -33,7 +33,7 @@ context('Discount', function () {
 		it('description', function () {
 			const expected = { cost: 100}
 			const actual = discount(2, 50)
-			expect(actual).to.eql(expected)
+			expect(actual).toEqual(expected)
 		})
 	})
 })
