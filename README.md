@@ -25,8 +25,6 @@ Run the following command in terminal
 
 ## Run Tests
 
-> TODO: Introduce Test framework(e.g. Mocha) as currently we are only using assertions
-
 To run tests simply execute
 
 `npm test`
