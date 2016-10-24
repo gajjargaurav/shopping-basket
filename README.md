@@ -28,3 +28,10 @@ Run the following command in terminal
 To run tests simply execute
 
 `npm test`
+
+## Notes
+
+The solution uses a third party module
+ [Receipt](https://github.com/MartyWallace/Receipt) to generate the desired output but it needed some tweaks to fit the requirements so [a fork of it](https://github.com/gajjargaurav/Receipt) was used to complete the solution
+
+ [PRs](https://github.com/MartyWallace/Receipt/pulls) have been made to the original Repo but sometimes that takes time so the fork is directly referenced for time being.
